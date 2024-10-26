@@ -1,0 +1,23 @@
+{
+  "name": "skills_learned",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Author <user@example.org>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "5",
+    "ch-select-picker": "^1.1.0",
+    "d3-tip": "^0.9.1",
+    "lodash": "4",
+    "uifactory": "0.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-template": "^0.7.0",
+    "prettier": "^3.0.2"
+  }
+}
