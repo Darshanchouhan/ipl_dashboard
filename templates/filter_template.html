@@ -1,0 +1,20 @@
+<div class="text-white fs-18 opacity-90 ml-3">
+    <%= fltr['title'] %>
+</div>
+<span class="text-white fs-18 opacity-90 px-1">|</span>
+<select class="bg-transparent custom-select-style" id="<%= fltr['id'] %>" title="<%= fltr['title']%>"
+    data-width="95px" data-size="5" data-style="custom-arrow bg-transparent text-white border-0 px-0 py-3 fs-22 opacity-90">
+    <% _.each(fltr['options'], function(datum){ %>
+        <% if(datum['val']==fltr['selected_val']){ %>
+            <option class="text-white fs-14 px-4 py-3" selected
+                value="<%= datum['val'] %>">
+                <%= datum['val'] %>
+            </option>
+        <% } else { %>
+            <option class="text-white fs-14 px-4 py-3"
+                value="<%= datum['val'] %>">
+                <%= datum['val'] %>
+            </option>
+        <% } %>
+    <% }) %>
+</select>
